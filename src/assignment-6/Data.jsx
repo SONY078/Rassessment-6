@@ -6,39 +6,39 @@ const Data = (props)=>
 {
     const [student , setStudent ] = useState([
     {
-       "Name":"Riki",
-       "Age":20,
-       "Course":"MERN",
-       "Batch":"January",
-       "id":1
+       Name:"Riki",
+       Age:20,
+       Course:"MERN",
+       Batch:"January",
+       id:"1"
     },
     {
-      "Name":"Taehyun",
-      "Age":21,
-      "Course":"MERN",
-      "Batch":"March",
-      "id":2
+      Name:"Taehyun",
+      Age:21,
+      Course:"MERN",
+      Batch:"March",
+      id:"2"
     },
     {
-      "Name":"Felix",
-      "Age":21,
-      "Course":"MERN",
-      "Batch":"December",
-      "id":3
+      Name:"Felix",
+      Age:21,
+      Course:"MERN",
+      Batch:"December",
+      id:"3"
     },
     {
-      "Name":"Chan",
-      "Age":25,
-      "Course":"MERN",
-      "Batch":"February",
-      "id":4
+      Name:"Chan",
+      Age:25,
+      Course:"MERN",
+      Batch:"February",
+      id:"4"
     },
     {
-      "Name":"Jin",
-      "Age":27,
-      "Course":"MERN",
-      "Batch":"March",
-      "id":5
+      Name:"Jin",
+      Age:27,
+      Course:"MERN",
+      Batch:"March",
+      id:"5"
     },
 
   ])

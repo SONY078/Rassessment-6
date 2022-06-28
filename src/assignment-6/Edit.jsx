@@ -7,7 +7,7 @@ import  {Name2} from './Data.jsx';
 function Edit() 
 {
   const [student, setStudent] = useContext(Name2);
-  const { uniq } = useParams();
+  const { id } = useParams();
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
   const [course, setCourse] = useState("");
@@ -38,7 +38,7 @@ function Edit()
     {
       student.forEach((element) => 
       {
-        if (element.id === uniq) 
+        if (element.id === id) 
         {
           setName(element.Name);
           setAge(element.Age);
@@ -46,14 +46,14 @@ function Edit()
           setBatch(element.Batch);
         }
       });
-    }, [uniq, student]);
+    }, [id, student]);
   
     const SubmitHandler = () => {
       setStudent((previousV) =>
         previousV.map((store) =>
-          store.id === uniq
+          store.id === id
             ? {
-                id: uniq,
+                id: id,
                 Name: name,
                 Age: age,
                 Batch: batch,
